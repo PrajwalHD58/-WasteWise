@@ -1,4 +1,4 @@
-package com.example.androidonboardingexample.Onboarding;
+package com.example.WasteWise.Onboarding;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewpager.widget.PagerAdapter;
 
-import com.example.androidonboardingexample.R;
+import com.example.WasteWise.R;
 
 public class OnboardingAdapter extends PagerAdapter {
 

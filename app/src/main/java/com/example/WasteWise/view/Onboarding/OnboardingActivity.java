@@ -1,5 +1,6 @@
-package com.example.androidonboardingexample.Onboarding;
+package com.example.WasteWise.Onboarding;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -10,7 +11,8 @@ import android.view.WindowManager;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
-import com.example.androidonboardingexample.R;
+import com.example.WasteWise.R;
+import com.example.WasteWise.view.UserLogin;
 
 
 public class OnboardingActivity extends AppCompatActivity {
@@ -39,6 +41,10 @@ public class OnboardingActivity extends AppCompatActivity {
         if (view.getId() == R.id.button2) {
             if (viewPager.getCurrentItem() < onboardingAdapter.getCount() - 1) {
                 viewPager.setCurrentItem(viewPager.getCurrentItem() + 1, true);
+            } else {
+                Intent intent = new Intent(getApplicationContext(), UserLogin.class);
+                startActivity(intent);
+                finish();
             }
         }
     }

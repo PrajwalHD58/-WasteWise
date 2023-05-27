@@ -1,10 +1,10 @@
-package com.example.androidonboardingexample.Onboarding;
+package com.example.WasteWise.Onboarding;
 
 import android.view.View;
 
 import androidx.viewpager.widget.ViewPager;
 
-import com.example.androidonboardingexample.R;
+import com.example.WasteWise.R;
 
 public class OnboardingPageTransformer implements ViewPager.PageTransformer {
 

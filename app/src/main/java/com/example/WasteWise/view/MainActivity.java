@@ -1,11 +1,12 @@
-package com.example.androidonboardingexample;
+package com.example.WasteWise.view;
 
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.androidonboardingexample.Onboarding.OnboardingActivity;
+import com.example.WasteWise.Onboarding.OnboardingActivity;
+import com.example.WasteWise.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,6 +15,5 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        startActivity(new Intent(this, OnboardingActivity.class));
     }
 }
